@@ -19,7 +19,7 @@ _zLib.input_showBox = function(description, exampleText, maxLenght, isValueInt)
         blockInput = false
         if isValueInt then
             local isNumber = tonumber(result)
-            if isNumber and isNumber >= 0 then
+            if isNumber ~= nil then
                 return result
             else
                 return nil
